@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+   <div>
+
+    <script>
+        function escreve() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("cubo").innerText = var1.value*var1.value*var1.value;
+        }
+        function escreve2() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valcelsius");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("celsius").innerText = var1.value-32/1.8;
+        }
+        function escreve3() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valbase");
+            var var2 = document.getElementById("valaltura");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("area").innerText = var1.value*var2.value/2;
+        }
+        function escreve4() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valraio");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("areadocirculo").innerText = var1.value*var1.value*3.14;
+        }
+        function escreve5() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valraio2");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("perimetrodocirculo").innerText = var1.value*2*3.14;
+        }
+        function escreve6() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valdesconto");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("Valor do desconto").innerText = var1.value*0.05;
+        }
+        function escreve7() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valnascimento");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("ano de nascimento").innerText = 2023-var1.value;
+        }
+        function escreve8() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valcombustível");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("combustível").innerText = var1.value/5;
+        }
+        function escreve9() {
+            //window.alert("teste")
+            var var1 = document.getElementById("vallitros");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("litros").innerText = var1.value*20;
+        }
+    </script>
+    <input id="val1" value="1">
+    <button onclick="escreve()">calcule</button>
+    <p id="cubo">XXXX</p>
+    </div>
+
+    <div>
+    
+    <input id="valcelsius" value="1">
+    <button onclick="escreve2()">calcule</button>
+    <p id="celsius">XXXX</p>
+    </div>
+
+    <div>
+
+        
+        <input id="valbase" value="Base(em cm)">
+        <input id="valaltura" value="Altura(em cm)">
+        <button onclick="escreve3()">calcule</button>
+        <p id="area">XXXX</p>
+        </div>
+
+    <div>
+        
+        <input id="valraio" value="Valor do raio">
+        <button onclick="escreve4()">calcule</button>
+        <p id="areadocirculo">XXXX</p>
+        </div>
+        
+    <div>
+        
+        <input id="valraio2" value="Valor do raio">
+        <button onclick="escreve5()">calcule</button>
+        <p id="perimetrodocirculo">XXXX</p>
+        </div>
+
+    <div>
+
+        
+        <input id="valdesconto" value="Valor inicial">
+        <button onclick="escreve6()">calcule</button>
+        <p id="Valor do desconto">XXXX</p>
+        </div>
+
+        <div>
+    
+            
+            <input id="valnascimento" value="Sua data de nascimento">
+            <button onclick="escreve7()">calcule</button>
+            <p id="ano de nascimento">XXXX</p>
+            </div>
+
+            <div>
+                
+                <input id="valcombustível" value="Dinheiro em R$">
+                <button onclick="escreve8()">calcule</button>
+                <p id="combustível">XXXX</p>
+                </div>
+                <div>
+                   
+                    
+                    <input id="vallitros" value="Litros de combustível">
+                    <button onclick="escreve9()">calcule</button>
+                    <p id="litros">XXXX</p>
+                    </div>
+</body>
+</html>
